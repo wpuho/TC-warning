@@ -1,16 +1,20 @@
 #! /bin/sh
 
+#./WGETDATA.sh
+
+#val=$?
+#if [ $val -eq 1 ]; then
+#  exit 0
+#fi
+
 ./GETSST.sh
 
 ./TRACK.sh
 
 val=$?
-
 if [ $val -ne 1 ]; then
-
-rm 'tmp.txt'
-exit 0
-
+  rm 'tmp.txt'
+  exit 0
 fi
 
 ./PLOT.sh

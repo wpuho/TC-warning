@@ -7,7 +7,7 @@
         character(len=12) ::  input_data = 'analysed_sst'
         character(len=6)  ::  input_mask = 'mask'
 !============================
-        character(len=13) ::  NCL_input = "OISST_0901.nc"
+        character(len=8) ::  NCL_input = "OISST.nc"
 !============================
         character(len=8)  ::  sst_file = "20200901"
 !============================
@@ -17,7 +17,7 @@
         character(len=8)  ::  plot_input1 = "20200901"
         character(len=5)  ::  plot_input2 = "track"
         character(len=8)  ::  plot_output = "20200901"
-        character(len=7)  ::  TC_type = "Typhoon"
+        character(len=7)  ::  TC_type = "TYPHOON"
         character(len=3)  ::  TC_No = "11W"
         character(len=6)  ::  TC_name = "HAISHEN"
         character(len=2)  ::  TC_warning = "09"

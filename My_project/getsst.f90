@@ -1,4 +1,4 @@
-        program main
+        program getsst
 
           use netcdf
 
@@ -92,8 +92,9 @@
 
             write(21,'(F10.3,F9.3,F9.3)') lons(i),lats(j),sst(i,j,t)
 
-          else if ((mask(i,j,t).eq.2).or.(mask(i,j,t).eq.3)) then
-            
+          !else if ((mask(i,j,t).eq.2).or.(mask(i,j,t).eq.3)) then
+          else
+
             !write(21,'(F10.3,F9.3,F10.3)') lons(i),lats(j),mask_value
             write(31,'(F10.3,F9.3,F8.1)') lons(i),lats(j)
 
@@ -124,6 +125,6 @@
 
 !================================================
 
-        end program main
+        end program getsst
 
 !gfortran ReadSST.f90 -o ReadSST `nf-config --fflags --flibs`
